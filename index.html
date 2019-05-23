@@ -13,7 +13,7 @@
         <ul class="site-navigation ">
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="#map">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
@@ -21,8 +21,8 @@
     <main>
       <section class="picture">
         <h1 class="visually-hidden">Седона</h1>
-        <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" style="background-color:lightblue">
-        <!--да, я неверно выразилась, там текст--><!--фон добавила временно, чтобы всю картинку было видно-->
+        <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" style="background-color:lightblue;">
+        <!--фон добавила временно, чтобы всю картинку было видно-->
       </section>
       <p class="lead">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
       <section class="features">
@@ -32,7 +32,9 @@
             <h3>Настоящий городок</h3>
             <span>- №1 -</span>
             <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="img/sedona-1.jpg" width="800" height="256" alt="Фото Седоны">
+            <div>
+              <img src="img/sedona-1.jpg" width="800" height="256" alt="Фотография Седоны">
+            </div>
             <ul>
               <li class="item">
                 <h4>Жилье</h4>
@@ -52,7 +54,9 @@
             <h3>Там есть Мост Дьявола</h3>
             <span>- №2 -</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="img/sedona-2.jpg" width="800" height="256" alt="Мост Дьявола">
+            <div>
+              <img src="img/sedona-2.jpg" width="800" height="256" alt="Фотография Мост Дьявола">
+            </div>
           </li>
           <li class="feauture-item">
             <h3>Небольшая площадь</h3>
@@ -74,11 +78,32 @@
       <section class="search">
         <p class="tagline">Заинтересовались?<p>
         <h2>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</h2>
-        <button>Поиск гостиницы в Седоне</button>
-        <!--Здесь будет форма-->
+        <button type="button">Поиск гостиницы в Седоне</button>
+        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <p class="search-item">
+            <label>Дата заезда
+              <input type="text" name="arrival date" value="" placeholder="24 апреля 2017">
+            </label>
+          </p>
+          <p class="search-item">
+            <label>Дата выезда
+              <input type="text" name="departure date" value="" placeholder="4 июля 2017">
+            </label>
+          </p>
+          <p class="search-item">
+            <label>Взрослые
+              <input type="text" name="Adults" value="" placeholder="2">
+            </label>
+            <label>Дети
+              <input type="text" name="Children" value="" placeholder="2">
+            </label>
+          <p>
+            <button class="search-button" type="submit">Найти</button>
+          </p>
+        </form>
       </section>
-      <section class="map">
-        <h2 class="visually-hidden">Карта</h2>
+      <section class="map" id="map">
+        <h2 class="visually-hidden">Карта Седоны</h2>
         <img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
       </section>
     </main>
@@ -86,9 +111,9 @@
       <p class="hashtag">#visitsedona</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Twitter</a></li>
-          <li><a class="social-button" href="#">Facebook</a></li>
-          <li><a class="social-button" href="#">YouTube</a></li>
+          <li><a class="social-button" href="https://twitter.com/">Twitter</a></li><!--убрать название, добавить aria-label="Мы в Twitter"-->
+          <li><a class="social-button" href="https://facebook.com">Facebook</a></li><!--убрать название, добавить aria-label="Мы в Facebook"-->
+          <li><a class="social-button" href="https://youtube.com">YouTube</a></li><!--убрать название, добавить aria-label="Мы в YouTube"-->
         </ul>
       </div>
       <p class="footer-copyright">
