@@ -81,22 +81,28 @@
         <button type="button">Поиск гостиницы в Седоне</button>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="search-item">
-            <label>Дата заезда
-              <input type="text" name="arrival date" value="" placeholder="24 апреля 2017">
-            </label>
+            <label for="arrival-date">Дата заезда</label>
+            <input type="text" name="arrival-date" id="arrival-date" value="" placeholder="24 апреля 2017">
+            <button class="btn" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
           </p>
           <p class="search-item">
-            <label>Дата выезда
-              <input type="text" name="departure date" value="" placeholder="4 июля 2017">
-            </label>
+            <label for="departure-date">Дата выезда</label>
+            <input type="text" name="departure-date" id="departure-date" value="" placeholder="4 июля 2017">
+            <button class="btn" type="button">
+              <span class="visually-hidden">Календарь</span>
+            </button>
           </p>
           <p class="search-item">
-            <label>Взрослые
-              <input type="text" name="Adults" value="" placeholder="2">
-            </label>
-            <label>Дети
-              <input type="text" name="Children" value="" placeholder="2">
-            </label>
+            <label for="adults">Взрослые</label>
+            <button class="control" type="button">-</button>
+            <input type="text" name="adults" id="adults" value="" placeholder="2">
+            <button class="control" type="button">+</button>
+            <label for="children">Дети</label>
+            <button class="control" type="button">-</button>
+            <input type="text" name="children" id="children" value="" placeholder="2">
+            <button class="control" type="button">+</button>
           <p>
             <button class="search-button" type="submit">Найти</button>
           </p>
