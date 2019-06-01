@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
     <header class="main-header">
       <a class="main-header-logo">
@@ -18,11 +22,11 @@
         </ul>
       </nav>
     </header>
+
     <main>
       <section class="picture">
         <h1 class="visually-hidden">Седона</h1>
-        <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!" style="background-color:lightblue;">
-        <!--фон добавила временно, чтобы всю картинку было видно-->
+        <img src="img/intro-welcome.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!">
       </section>
       <p class="lead">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
       <section class="features">
@@ -75,21 +79,22 @@
           </li>
         </ol>
       </section>
+
       <section class="search">
         <p class="tagline">Заинтересовались?<p>
         <h2>Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в Седоне</h2>
-        <button type="button">Поиск гостиницы в Седоне</button>
+        <button class="search-btn" type="button">Поиск гостиницы в Седоне</button>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
           <p class="search-item">
             <label for="arrival-date">Дата заезда</label>
-            <input type="text" name="arrival-date" id="arrival-date" value="" placeholder="24 апреля 2017">
+            <input class="input" type="text" name="arrival-date" id="arrival-date" value="" placeholder="24 апреля 2017">
             <button class="btn" type="button">
               <span class="visually-hidden">Календарь</span>
             </button>
           </p>
           <p class="search-item">
             <label for="departure-date">Дата выезда</label>
-            <input type="text" name="departure-date" id="departure-date" value="" placeholder="4 июля 2017">
+            <input class="input" type="text" name="departure-date" id="departure-date" value="" placeholder="4 июля 2017">
             <button class="btn" type="button">
               <span class="visually-hidden">Календарь</span>
             </button>
@@ -97,29 +102,31 @@
           <p class="search-item">
             <label for="adults">Взрослые</label>
             <button class="control" type="button">-</button>
-            <input type="text" name="adults" id="adults" value="" placeholder="2">
+            <input class="input" type="text" name="adults" id="adults" value="" placeholder="2">
             <button class="control" type="button">+</button>
             <label for="children">Дети</label>
             <button class="control" type="button">-</button>
-            <input type="text" name="children" id="children" value="" placeholder="2">
+            <input class="input" type="text" name="children" id="children" value="" placeholder="2">
             <button class="control" type="button">+</button>
           <p>
             <button class="search-button" type="submit">Найти</button>
           </p>
         </form>
       </section>
+
       <section class="map" id="map">
         <h2 class="visually-hidden">Карта Седоны</h2>
         <img src="img/map.jpg" width="1200" height="593" alt="Карта Седоны">
       </section>
     </main>
+
     <footer class="main-footer">
       <p class="hashtag">#visitsedona</p>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="https://twitter.com/">Twitter</a></li><!--убрать название, добавить aria-label="Мы в Twitter"-->
-          <li><a class="social-button" href="https://facebook.com">Facebook</a></li><!--убрать название, добавить aria-label="Мы в Facebook"-->
-          <li><a class="social-button" href="https://youtube.com">YouTube</a></li><!--убрать название, добавить aria-label="Мы в YouTube"-->
+          <li><a class="social-button visually-hidden" href="https://twitter.com/">Twitter</a></li>
+          <li><a class="social-button visually-hidden" href="https://facebook.com">Facebook</a></li>
+          <li><a class="social-button visually-hidden" href="https://youtube.com">YouTube</a></li>
         </ul>
       </div>
       <p class="footer-copyright">

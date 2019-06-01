@@ -1,0 +1,397 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+} /*а нужно ли здесь это? в body прописано*/
+
+.site-navigation,
+.user-navigation,
+.footer-social ul {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.main-navigation a:hover,
+.main-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active,
+.main-navigation a:active {
+  color: #9c9898;
+}
+
+.picture {
+  background-color: #b1defa;
+  background-image: url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.lead {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.features-title {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.feauters-list,
+.item {
+  list-style: none;
+  text-align: center;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.feauters-list h3,
+.feauters-list h4 {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+}
+
+.feauture-item.blue-item {
+  background-color: #81b3d2;
+
+  color: #ffffff;
+}
+
+.feauture-item ul {
+  padding: 10px;/*установить после настройки расположения блоков*/
+  margin-left: -10px;
+  margin-right: -10px;
+
+  background-color: #ffffff;
+
+  color: #000000;
+}
+
+.feauture-item {
+  padding: 10px; /*установить после настройки расположения блоков*/
+  background-color: #eeeeee;
+}
+
+.tagline {
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center
+}
+
+.search h2 {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.search-btn {
+  padding: 25px 145px 25px 145px;
+
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border: none;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+  background-color: #604e43;
+  outline: none;
+}
+
+.search-btn:active {
+  background-color: #503e33;
+  color: #857871;
+}
+
+.search-item input {
+  font: inherit;
+  text-transform: uppercase;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-item:hover input {
+  background-color: #ebebeb;
+}
+
+.input:focus {
+  background-color: #ffffff;
+  border: 2px solid #ebebeb;
+  outline: none;
+}
+
+.btn,
+.control {
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-button {
+  padding: 25px 145px 25px 145px;
+
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.search-button:hover,
+.search-button:focus {
+  background-color: #669ec0;
+  outline: none;
+}
+
+.search-button:active {
+  background-color: #5496bd;
+  color: #88b6d1;
+}
+
+/*стилизация каталога*/
+
+.current a,
+.current:hover a,
+.current:focus a {
+  color: #766357;
+}
+
+.filters {
+  background-color: #303034;
+  background-image: url("../img/filter-bg.jpg");
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters ul {
+  list-style: none;
+}
+
+.filters legend,
+.filter-option p {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.filter-option label {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.filter-button {
+  padding: 20px 40px;
+
+  font: inherit;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: #000000;
+
+  background-color: #ffffff;
+  outline: none;
+}
+
+.results p {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.results h2,
+.results a {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.results ul {
+  list-style: none;
+}
+
+.not-active a {
+  color: #cacaca;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.not-active:hover a,
+.not-active:focus a {
+  color: #81b3d2;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.not-active:active a {
+  color: #000000;
+  border: none;
+}
+
+.active a {
+  color: #81b3d2;
+  border: none;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item h3 {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.catalog-item h3>a {
+  color: #000000;
+}
+
+.catalog-item h3:hover a,
+.catalog-item h3:focus a {
+  color: #81b3d2;
+}
+
+.catalog-item h3:active a {
+  color: #d7d7d7;
+}
+
+.catalog-item span {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.more a,
+.button a {
+  padding: 8px 18px;
+
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.more a {
+  background-color: #81b3d2;
+}
+
+.button a{
+  background-color: #766357;
+}
+
+.more:hover a,
+.more:focus a {
+  background-color: #669ec0;
+}
+
+.more:active a {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.button:hover a,
+.button:focus a {
+  background-color: #604e43;
+}
+
+.button:active a {
+  color: #766860;
+  background-color: #503e33;
+}
+
+.popular {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+
+  background-color: #f2f2f2;
+}
+
+/*стилизация футера*/
+
+.main-footer {
+  background-color: #ffffff;
+}
+
+.hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.social-button {
+  background-color: #81b3d2
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.footer-copyright {
+  text-align: center;
+}
+
+.footer-copyright b {
+  font-weight: 400;
+}
+
+

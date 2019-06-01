@@ -3,7 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
+
   <body>
     <header class="main-header">
       <a class="main-header-logo" href="index.html">
@@ -14,10 +18,11 @@
           <li><a href="info.html">Информация</a></li>
           <li><a href="photo.html">Фото и видео</a></li>
           <li><a href="index.html#map">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
+          <li class="current"><a>Гостиницы</a></li>
         </ul>
       </nav>
     </header>
+
     <main class="container">
       <h1 class="visually-hidden">Поиск отелей</h1>
       <section class="filters">
@@ -60,8 +65,8 @@
           <div class="filter-option">
             <p>Стоимость в сутки (р):</p>
             <p>
-            <label>От<input type="text" name="from" value="0"></label>
-            <label>До<input type="text" name="to" value="3000"></label>
+            <label class="filter-option-value">От<input type="text" name="from" value="0"></label>
+            <label class="filter-option-value">До<input type="text" name="to" value="3000"></label>
             </p>
             <p>
               <button class="range-filter-button" type="button">
@@ -82,6 +87,27 @@
           </div>
         </form>
       </section>
+
+      <div class="results">
+        <p>Найдено: 3</p>
+        <h2>Сортировка</h2>
+        <ul>
+          <li class="active">
+            <a>По цене</a>
+          </li>
+          <li class="not-active">
+            <a href="#">По типу</a>
+          </li>
+          <li class="not-active">
+            <a href="#">По рейтингу</a>
+          </li>
+        </ul>
+        <span>
+          <button type="button">Вверх</button>
+          <button type="button">Вниз</button>
+        </span>
+      </div>
+
       <section class="catalog">
         <h2 class="visually-hidden">Каталог отелей</h2>
         <ul class="catalog-list">
@@ -96,14 +122,16 @@
                 <img src="img/amara.jpg" alt="Отель Amara Resort & SPA" width="135" height="90">
               </a>
             </p>
-            <p class="details">
-              <a class="more" href="hotel-amara.html">Подробнее</a>
-              <a class="button" href="cart.html">Забронировать</a>
+            <p class="more">
+              <a href="hotel-amara.html">Подробнее</a>
+            </p>
+            <p class="button">
+              <a href="cart.html">Забронировать</a>
             </p>
             <div class="stars"></div>
             <span class="popular">Рейтинг: 8,5</span>
           </li>
-          <li class="catalog-items">
+          <li class="catalog-item">
             <h3>
               <a href="desert-quail.html">Desert Quail Inn</a>
             </h3>
@@ -114,14 +142,16 @@
                 <img src="img/desert.jpg" alt="Мотель Desert Quail Inn" width="135" height="90">
               </a>
             </p>
-            <p class="details">
-              <a class="more" href="desert-quail.html">Подробнее</a>
-              <a class="button" href="cart.html">Забронировать</a>
+            <p class="more">
+              <a href="desert-quail.html">Подробнее</a>
+            </p>
+            <p class="button">
+              <a href="cart.html">Забронировать</a>
             </p>
             <div class="stars"></div>
             <span class="popular">Рейтинг: 8,9</span>
           </li>
-          <li class="catalog-items">
+          <li class="catalog-item">
             <h3>
               <a href="villas.html">Villas at Poco Diablo</a>
             </h3>
@@ -132,9 +162,11 @@
                 <img src="img/villas.jpg" alt="Апартаменты Villas at Poco Diablo" width="135" height="90">
               </a>
             </p>
-            <p class="details">
-              <a class="more" href="villas.html">Подробнее</a>
-              <a class="button" href="cart.html">Забронировать</a>
+            <p class="more">
+              <a href="villas.html">Подробнее</a>
+            </p>
+            <p class="button">
+              <a href="cart.html">Забронировать</a>
             </p>
             <div class="stars"></div>
             <span class="popular">Рейтинг: 9,2</span>
@@ -142,6 +174,7 @@
         </ul>
       </section>
     </main>
+
     <footer class="main-footer">
         <p class="hashtag">#visitsedona</p>
         <div class="footer-social">
