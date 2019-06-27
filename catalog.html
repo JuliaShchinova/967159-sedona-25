@@ -9,7 +9,8 @@
   </head>
 
   <body>
-    <header class="main-header container">
+    <div class="container">
+    <header class="main-header">
       <a class="main-header-logo" href="index.html">
         <img src="img/logo-sedona.svg" width="140" height="71" alt="Логотип Седоны">
       </a>
@@ -23,12 +24,9 @@
       </nav>
     </header>
 
-    <main class="container">
+    <main>
       <h1 class="visually-hidden">Поиск отелей</h1>
       <section class="filters">
-
-
-
         <h2 class="visually-hidden">Фильтр отелей</h2>
         <form class="search-filter" action="https://echo.htmlacademy.ru/" method="get">
         <div class="filter-hotels">
@@ -96,8 +94,6 @@
           </div>
         </div>
         </form>
-
-
       </section>
 
       <div class="results">
@@ -123,21 +119,20 @@
       <section class="catalog">
         <h2 class="visually-hidden">Каталог отелей</h2>
         <ul class="catalog-list">
-
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="photo-amara.html">
                 <img src="img/amara.jpg" alt="Отель Amara Resort & SPA" width="135" height="91">
               </a>
             </p>
-            <div class="wrapper">
+            <div class="hotel-wrapper">
               <h3 class="hotel-name">
                 <a href="hotel-amara.html">Amara Resort & SPA</a>
               </h3>
               <div class="book-wrapper">
-                <div class="about">
+                <div class="about-hotel">
                   <span>Гостиница</span>
-                  <p class="more">
+                  <p class="hotel-more">
                     <a href="hotel-amara.html">Подробнее</a>
                   </p>
                 </div>
@@ -149,7 +144,8 @@
                 </div>
               </div>
             </div>
-            <div class="stars">
+            <div class="hotel-raiting">
+              <span class="stars visually-hidden">Уровень отеля</span>
               <span class="popular">Рейтинг: 8,5</span>
             </div>
           </li>
@@ -160,14 +156,14 @@
                       <img src="img/desert.jpg" alt="Мотель Desert Quail Inn" width="135" height="91">
                   </a>
               </p>
-              <div class="wrapper">
+              <div class="hotel-wrapper">
                   <h3 class="hotel-name">
                       <a href="desert-quail.html">Desert Quail Inn</a>
                   </h3>
                   <div class="book-wrapper">
-                      <div class="about">
+                      <div class="about-hotel">
                           <span>Мотель</span>
-                          <p class="more">
+                          <p class="hotel-more">
                               <a href="desert-quail.html">Подробнее</a>
                           </p>
                       </div>
@@ -179,7 +175,8 @@
                       </div>
                   </div>
               </div>
-              <div class="stars">
+              <div class="hotel-raiting">
+                  <span class="stars visually-hidden">Уровень отеля</span>
                   <span class="popular">Рейтинг: 8,9</span>
               </div>
           </li>
@@ -190,14 +187,14 @@
                       <img src="img/villas.jpg" alt="Апартаменты Villas at Poco Diablo" width="135" height="91">
                   </a>
               </p>
-              <div class="wrapper">
+              <div class="hotel-wrapper">
                   <h3 class="hotel-name">
                       <a href="villas.html">Villas at Poco Diablo</a>
                   </h3>
                   <div class="book-wrapper">
-                      <div class="about">
+                      <div class="about-hotel">
                           <span>Апартаменты</span>
-                          <p class="more">
+                          <p class="hotel-more">
                               <a href="villas.html">Подробнее</a>
                           </p>
                       </div>
@@ -209,7 +206,8 @@
                       </div>
                   </div>
               </div>
-              <div class="stars">
+              <div class="hotel-raiting">
+                  <span class="stars visually-hidden">Уровень отеля</span>
                   <span class="popular">Рейтинг: 9,2</span>
               </div>
           </li>
@@ -217,7 +215,7 @@
       </section>
     </main>
 
-    <footer class="main-footer container">
+    <footer class="main-footer">
         <p class="hashtag">#visitsedona</p>
         <div class="footer-social">
           <ul>
@@ -233,5 +231,6 @@
           </a>
         </p>
       </footer>
+      </div>
   </body>
 </html>
